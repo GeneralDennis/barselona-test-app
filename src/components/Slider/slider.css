@@ -1,0 +1,269 @@
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    background: rgb(179, 89, 6);
+}
+
+a {
+    text-decoration: none;
+}
+
+.about {
+    overflow: hidden;
+    height: 606px;
+    background: #ffffff;
+    padding-left: 31px;
+}
+
+.about>.title {
+    margin-top: 35px;
+    margin-bottom: 21px;
+}
+
+.carousel {
+    position: relative;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 0px;
+    padding: 0;
+    display: block;
+    width: 30px;
+    height: 410px;
+    background: #FFFFFF;
+    border: none;
+    opacity: 0.8;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 850px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 410px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    -webkit-transition: margin-left 250ms;
+    -moz-transition: margin-left 250ms;
+    -ms-transition: margin-left 250ms;
+    -o-transition: margin-left 250ms;
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.tumbs_gallery {
+    width: 220px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.card {
+    width: 281px;
+    height: auto;
+    background: #F9F7F2;
+    padding-left: 19px;
+    margin-right: 20px;
+    display: inline-block;
+    height: 410px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.card_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
+
+.card_avatar {
+    height: 30px;
+    width: 30px;
+    margin-top: 26px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card_name {
+    margin-top: 34px;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: Kievit;
+}
+
+.card_desc {
+    white-space: normal;
+}
+
+.card_desc-title {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #FC4F1E;
+}
+
+.card_desc-text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 13px;
+    width: 240px;
+    font-family: Roboto;
+    height: 177px;
+}
+
+.tumbnail {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.card_footer {
+    font-size: 11px;
+    line-height: 25px;
+    color: #9D9D9D;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-bottom: 11px;
+    font-family: Roboto;
+    margin-top: 19px;
+}
+
+.add_date {
+    margin-right: 11px;
+}
+
+.dot {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+.comments {
+    margin-right: 29px;
+}
+
+.like {
+    margin-top: 1px;
+}
+
+.likes_num {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.about_footer {
+    margin-top: 32px;
+    margin-bottom: 33px;
+}
+
+.show_all {
+    width: 124px;
+    height: 40px;
+    border: 2px solid #FF4641;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: none;
+    float: left;
+}
+
+.marks {
+    width: 96px;
+    height: 8px;
+    float: right;
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+    margin-right: 29px;
+    align-items: center;
+}
+
+.mark {
+    width: 4px;
+    height: 4px;
+    background: #212121;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 14px;
+}
+
+.mark:last-child {
+    margin-right: 0px;
+}
+
+.active {
+    width: 8px;
+    height: 8px;
+    background: #FF4641;
+}
+
+.tumb_hover {
+    width: 50px;
+    height: 36px;
+    background-color: rgba(16, 16, 16, 0.4);
+    z-index: 10;
+    position: absolute;
+    top: 299px;
+    left: 184px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 12px;
+    color: #fff;
+}
