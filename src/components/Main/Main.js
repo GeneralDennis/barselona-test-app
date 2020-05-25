@@ -14,6 +14,8 @@ export default class Main extends Component {
     this.state = {
         adminText: '',
         userText: '',
+        bgAdmin: '#F9F7F2',
+        bgUser: '#fff',
         messages: [
             {
                 from: null,
@@ -53,7 +55,6 @@ onMessageSendUser(e){
     let time = new Date().toLocaleString()
     let newMessage = {
         text: this.state.userText,
-        bg: e.target.title,
         from: e.target.name,
         timestamp: time
     }
@@ -63,13 +64,13 @@ onMessageSendUser(e){
     })
 }
   render() {
-      const { messages, adminText, userText } = this.state
+      const { messages, adminText, userText, bgUser, bgAdmin } = this.state
       const mess = 
       <div>{messages.map(message => (
             message.text ? 
             <div
                 className="message" key={message.timestamp}
-                style={{backgroundColor: message.bg}}
+                style={ message.from === 'admin' ? {backgroundColor: bgAdmin} : {backgroundColor : bgUser}}
             >
                 <img
                     src={ message.from === 'admin' ? "images/face2.png" :  "images/face.png"}
@@ -139,8 +140,7 @@ onMessageSendUser(e){
                         className='send'
                         onClick={this.onMessageSendUser}>
                         <img src="images/letter.png" 
-                        name='user'
-                        title='#fff'/>
+                        name='user'/>
                     </button>
                 </div>
             </div>
@@ -174,8 +174,7 @@ onMessageSendUser(e){
                         className='send'
                         onClick={this.onMessageSendAdmin}>
                         <img src="images/letter.png" 
-                        name='admin'
-                        title='#F9F7F2'/>
+                        name='admin'/>
                     </button>
                 </div>
             </div>
